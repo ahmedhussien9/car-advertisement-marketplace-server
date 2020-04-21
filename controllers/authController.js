@@ -201,7 +201,7 @@ router.post('/reset-password', async (req, res, next) => {
             subject: `Eve ${user.username} Password Reset`,
             text: 'You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n' +
                 'Please click on the following link, or paste this into your browser to complete the process:\n\n' +
-                'https://localhost:4200/auth/reset-password?token=' + resettoken.resettoken + '\n\n' +
+                'https://evestore.herokuapp.com/auth/reset-password?token=' + resettoken.resettoken + '\n\n' +
                 'If you did not request this, please ignore this email and your password will remain unchanged.\n'
         }
         transporter.sendMail(mailOptions, (err, info) => {
@@ -214,6 +214,7 @@ router.post('/reset-password', async (req, res, next) => {
         })
     })
 })
+
 
 
 module.exports = router;
