@@ -48,7 +48,7 @@ app.use("/users", auth, usersController);
 app.use("/products", auth, productController);
 app.use("/carts", auth, cartController);
 app.use("/checkout", auth, checkoutController);
-app.get('/', (req, res) => res.send('Working!!!'));
+app.get('/', (req, res) => res.send('NodeJs Web Api working!!!'));
 app.use((err, req, res, next) => {
   handleError(err, res);
 });
