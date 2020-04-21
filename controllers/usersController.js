@@ -5,10 +5,6 @@ const { ErrorHandler } = require("../helper/validationError");
 router.post("/create", async (request, reponse, next) => {
     try {
         const userData = request.body;
-        console.log(userData);
-        if (!userData.name) {
-            throw new ErrorHandler(404, 'Please enter your name');
-        }
         if (!userData.mobile) {
             throw new ErrorHandler(404, "Please enter your mobile number")
         }
