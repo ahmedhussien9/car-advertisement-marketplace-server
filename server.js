@@ -7,9 +7,6 @@ const express = require("express"),
 
 const authController = require("./controllers/authController");
 const usersController = require("./controllers/usersController");
-const productController = require("./controllers/productController");
-const cartController = require("./controllers/cartController");
-const checkoutController = require("./controllers/checkoutController");
 const auth = require("./middleware/check-auth");
 const { handleError } = require("./helper/validationError");
 
@@ -45,9 +42,6 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use("/auth", authController);
 app.use("/users", auth, usersController);
-app.use("/products", auth, productController);
-app.use("/carts", auth, cartController);
-app.use("/checkout", auth, checkoutController);
 app.get('/', (req, res) => res.send('NodeJs Web Api working!!!'));
 app.use((err, req, res, next) => {
   handleError(err, res);
