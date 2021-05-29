@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const beautifyUnique = require("mongoose-beautiful-unique-validation");
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
-  username: {
+const sellerSchem = Schema({
+  fullName: {
     type: String,
     min: [5, "Too short, min is 5 characters"],
     max: [32, "Too long, max is 32 characters"],
@@ -24,6 +24,5 @@ const userSchema = new Schema({
     required: "Password is required",
   },
 });
-
-userSchema.plugin(beautifyUnique);
-module.exports = mongoose.model("Admin", userSchema);
+sellerSchem.plugin(beautifyUnique);
+module.exports = mongoose.model("Seller", sellerSchem);
