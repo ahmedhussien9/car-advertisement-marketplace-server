@@ -1,6 +1,6 @@
-# Project Title
+# Car Advertisments marketplace Backend
 
-A nice project with a nice description
+Car Advertisments marketplace is a backend API that will enable sellers to register on the app and add car adveritsments which include all the details about this car also they can setup their prefered time slots that will be shown on a mobile app to help buyers to browse the list of advertisments and show the car details which belongs to a single seller and if the buyers wants to book appointment to see the car he can show the car details & the avalible time slots for seller.   
 
 ---
 ## Requirements
