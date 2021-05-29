@@ -53,6 +53,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project
 
     $ nodemon
+    
+The server should be running at http//:localhost:4000
 
 ## Api's Collection 
 
