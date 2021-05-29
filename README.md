@@ -1,6 +1,6 @@
 # Car Advertisments marketplace Backend
 
-Car Advertisments marketplace is a backend API that will enable sellers to register on the app and add car adveritsments which include all the details about this car also they can setup their prefered time slots that will be shown on a mobile app to help buyers to browse the list of advertisments and show the car details which belongs to a single seller and if the buyers wants to book appointment to see the car he can show the car details & the avalible time slots for seller.   
+Car Advertisments marketplace is a backend API that will enable sellers to register on the app and add car adveritsments which include all the details about this car also they can setup their prefered time slots that will be shown on a mobile app to help buyers to browse the list of car advertisments and show the car details which belongs to a single seller and if the buyers wants to book appointment to see the car he can show the car details & the avalible time slots for seller.   
 
 ---
 ## Requirements
@@ -26,10 +26,10 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 If the installation was successful, you should be able to run the following command.
 
     $ node --version
-    v8.11.3
+    v12.20.1
 
     $ npm --version
-    6.1.0
+    6.14.10
 
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
@@ -45,22 +45,13 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
-    $ yarn install
+    $ git clone https://github.com/ahmedhussien9/car-advertisement-marketplace-server.git
+    $ cd car-advertisement-marketplace-server
+    $ yarn install or npm install
 
-## Configure app
-
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
-
-- A setting;
-- Another setting;
-- One more setting;
 
 ## Running the project
 
-    $ yarn start
+    $ nodemon
 
-## Simple build for production
 
-    $ yarn build
