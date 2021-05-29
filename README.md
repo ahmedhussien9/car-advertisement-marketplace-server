@@ -54,4 +54,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ nodemon
 
+## Api's Collection 
+
+To get the backend API collection you should import this URL into postman https://www.getpostman.com/collections/269fdf7ddfb3fb00a41c
 
