@@ -19,7 +19,6 @@ router.post("/create", async (req, res, next) => {
 
 // Route for getting seller time slot
 router.get("/:sellerId", async (req, res, next) => {
-  console.log(req.params.sellerId);
   try {
     const sellerTimeSlot = await timeSlotService.getSellerTimeSlot(
       req.params.sellerId
